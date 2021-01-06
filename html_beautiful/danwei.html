@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="swiper-slide outBox">
+    <div class="bottom1"></div>
+    <div class="content_out content_2_out">
+        <div class="head3"></div>
+        <div class="topData">
+            <div class="topDataItem">
+                <div class="dataItemTitle">
+                    候选对象
+                </div>
+                <div class="dataItemData">
+                    200
+                </div>
+            </div>
+            <div class="dataDivider"></div>
+            <div class="topDataItem">
+                <div class="dataItemTitle">
+                    累计投票
+                </div>
+                <div class="dataItemData">
+                    1684
+                </div>
+            </div>
+            <div class="dataDivider"></div>
+            <div class="topDataItem">
+                <div class="dataItemTitle">
+                    访问次数
+                </div>
+                <div class="dataItemData">
+                    1862
+                </div>
+            </div>
+        </div>
+        <div class="activityIntroduce">
+            <div class="introduceTitle">
+                <span>活动介绍</span>
+            </div>
+            <div class="introduceContent">
+                <div>
+                    今年以来，全省公安机关和广大公安民警忠诚践行对党忠诚、服务人民、执法公正、纪律严明总要求，用辛劳汗水乃至鲜血和生命，为维护国家安全、社会安定、人民安宁筑起了一道坚不可摧的铜墙铁壁；广大警务辅助人员协助民警维护社会治安、制止和惩治违法犯罪活动、保障公民人身和财产安全、深化社会治理和便民服务，发挥了重要作用；广大警嫂弘扬优良家风、勇挑家庭重担，在背后默默支持激励民警为公安事业不懈奋斗，努力当好“贤内助”，为公安事业发展做出了重要的贡献。<br>
+                </div>
+                <div>
+                    为表彰先进、激励斗志，省公安厅、省委宣传部、省总工会、团省委、省妇联、新华报业传媒集团和省广播电视总台共同组织举行江苏最美警察、最美辅警、最美警嫂、最美基层警队推选宣传活动，请网友投票评选出您心中最美的TA！
+                </div>
+            </div>
+        </div>
+        <div class="btnGroup">
+            <a href="tab2.html?tabIndex=0" onclick="handleSwitch(0)">最美警察</a>
+            <a href="tab2.html?tabIndex=1" onclick="handleSwitch(1)">最美辅警</a>
+            <a href="tab2.html?tabIndex=2" onclick="handleSwitch(2)">最美警嫂</a>
+            <a href="javascript:;" onclick="handleSwitch(3)">最美基层警队</a>
+        </div>
+        <div class="content_2_2">
+            <div class="content_title">
+                <div class="mainSearch">
+                    <div class="searchBox">
+                        <input type="text" placeholder="搜索候选单位名称…"/>
+                        <button class="searchBtn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="content_inBox">
+                <ul class="voteUl2 voteStationUl">
+                    <li class="vote_item3">
+                        <a href="doc2.html">
+                            <div class="vote_item_pic">
+                                <div class="vote_SN">23#</div>
+                                <img src="images/pic_02.jpg" alt=""/>
+                            </div>
+                            <div class="vote_item_info">
+                                <div class="vote_item_hd">
+                                    <div class="vote_item_stationName">南京市公安局秦淮分局瑞金路警务服务工作站</div>
+                                </div>
+                                <div class="vote_item_hd2">
+                                    <div class="vote_item_number_data">票数：365</div>
+                                    <div class="vote_item_number_rank">排名：18</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="vote_item_ft">
+                            <div class="weui-cells weui-cells_checkbox">
+                                <label class="weui-cell weui-check__label" for="a11">
+                                    <div class="weui-cell__hd">
+                                        <input type="checkbox" class="weui-check" name="checkbox1" id="a11">
+                                        <i class="weui-icon-checked"><span>投他一票</span></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="swiper-container navBar">-->
+<!--    <div class="swiper-wrapper">-->
+<!--        <a href="index.html" class="swiper-slide">首页</a>-->
+<!--        <a href="javascript:;" class="swiper-slide active">个人投票</a>-->
+<!--        <a href="tab3.html" class="swiper-slide">单位投票</a>-->
+<!--        <a href="tab4.html" class="swiper-slide">排行榜</a>-->
+<!--    </div>-->
+<!--</div>-->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.btnGroup').find('a:last')[0].style.backgroundColor='#D5010F'
+    })
+    function handleSwitch(index) {
+        Array.from($('.btnGroup')[0].children).forEach((item, i) => {
+            if (i === index) {
+                item.style.backgroundColor='#D5010F'
+            } else {
+                item.style.backgroundColor='#3B61C1'
+            }
+        })
+        // console.log($('.btnGroup'))
+        // $('.btnGroup')[index].style.backgroundColor='#D5010F'
+    }
+    function changeVote(index) {
+        $('.vote_btn_block')[index].style.backgroundColor='#A4565B'
+        $('.vote_btn_block')[index].children[0].innerText='您已投票'
+    }
+</script>
+
+</body>
+</html>

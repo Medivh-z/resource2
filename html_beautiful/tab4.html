@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="swiper-slide outBox">
+    <div class="bottom"></div>
+    <div class="content_out">
+        <div class="head2"></div>
+        <div class="content_2">
+            <!--<div class="content_titleRed">-->
+            <!--<div class="content_title_in">投票排行榜</div>-->
+            <!--</div>-->
+            <div class="weui-tab">
+                <div class="weui-navbar">
+                    <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+                        个人排行
+                    </a>
+                    <a class="weui-navbar__item" href="#tab2">
+                        单位排行
+                    </a>
+                </div>
+                <div class="weui-tab__bd">
+                    <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                        <div class="content_inBox">
+                            <table class="rankTable" border="0" cellspacing="0" cellpadding="3">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"></div>
+                                            <div class="rank_Title">候选人</div>
+                                        </div>
+                                    </th>
+                                    <th>票数</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">张三</div>
+                                        </div>
+                                    </td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">李四</div>
+                                        </div>
+                                    </td>
+                                    <td>8888</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">赵五</div>
+                                        </div>
+                                    </td>
+                                    <td>7777</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">孙六</div>
+                                        </div>
+                                    </td>
+                                    <td>6666</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">李七</div>
+                                        </div>
+                                    </td>
+                                    <td>5555</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">周八</div>
+                                        </div>
+                                    </td>
+                                    <td>4444</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">王九</div>
+                                        </div>
+                                    </td>
+                                    <td>3333</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">陈永仁</div>
+                                        </div>
+                                    </td>
+                                    <td>2222</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">刘建明</div>
+                                        </div>
+                                    </td>
+                                    <td>1111</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">刘杰辉</div>
+                                        </div>
+                                    </td>
+                                    <td>333</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="tab2" class="weui-tab__bd-item">
+                        <div class="content_inBox">
+                            <table class="rankTable" border="0" cellspacing="0" cellpadding="3">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"></div>
+                                            <div class="rank_Title">候选人</div>
+                                        </div>
+                                    </th>
+                                    <th>票数</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">南京市公安局鼓楼分局宁海路派出所</div>
+                                        </div>
+                                    </td>
+                                    <td>9999</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">南京市公安局秦淮分局瑞金路警务服务工作站</div>
+                                        </div>
+                                    </td>
+                                    <td>8888</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">南京市公安局交警支队一大队</div>
+                                        </div>
+                                    </td>
+                                    <td>7777</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">南京市公安局玄武分局新街口派出所</div>
+                                        </div>
+                                    </td>
+                                    <td>6666</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">无锡市公安局滨湖分局华庄派出所</div>
+                                        </div>
+                                    </td>
+                                    <td>5555</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">江阴市公安局刑警大队</div>
+                                        </div>
+                                    </td>
+                                    <td>4444</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">宜兴市公安局经侦大队</div>
+                                        </div>
+                                    </td>
+                                    <td>3333</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">无锡市公安局新吴分局坊前派出所</div>
+                                        </div>
+                                    </td>
+                                    <td>2222</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">徐州市公安局禁毒支队缉毒队</div>
+                                        </div>
+                                    </td>
+                                    <td>1111</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <div class="tdInbox">
+                                            <div class="rank_Pic"><img src="images/vote_pic_01.jpg" alt=""/></div>
+                                            <div class="rank_Title">睢宁县公安局</div>
+                                        </div>
+                                    </td>
+                                    <td>333</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="swiper-container navBar">
+    <div class="swiper-wrapper">
+        <a href="index.html" class="swiper-slide">首页</a>
+        <a href="tab2.html" class="swiper-slide">个人投票</a>
+        <a href="tab3.html" class="swiper-slide">单位投票</a>
+        <a href="javascript:;" class="swiper-slide active">排行榜</a>
+    </div>
+</div>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+
+</body>
+</html>
